@@ -1,20 +1,26 @@
 import React from 'react';
-import Header from '../components/Header';
-import Hero from '../components/Hero';
-import ServicesSection from '../components/ServicesSection';
-import AboutSection from '../components/AboutSection';
-import FAQSection from '../components/FAQSection';
+import HeaderClassic from '../components/HeaderClassic';
+import HeroClassic from '../components/HeroClassic';
+import ComparisonSection from '../components/ComparisonSection';
+import GuaranteesSection from '../components/GuaranteesSection';
+import EmergencyCTA from '../components/EmergencyCTA';
 import Footer from '../components/Footer';
 
 const HomePage: React.FC = () => {
     return (
-        <div className="flex flex-col min-h-screen">
-            <Header />
+        <div className="flex flex-col min-h-screen bg-[#f8fafc]">
+            <HeaderClassic />
             <main>
-                <Hero />
-                <ServicesSection />
-                <AboutSection />
-                <FAQSection />
+                <div className="pt-6 pb-20">
+                    <HeroClassic />
+                </div>
+
+                <div className="bg-[#f8fafc] pb-10">
+                    <ComparisonSection />
+                    <GuaranteesSection />
+                </div>
+
+                <EmergencyCTA />
             </main>
             <Footer />
 
